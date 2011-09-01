@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BatmanExample</title>
+
+  <script src="/batman/coffee-script.js" type="text/javascript"></script>
+  <script src="/batman/es5-shim.js" type="text/javascript"></script>
+  <script src="/batman/dist/batman.js" type="text/javascript"></script>
+
+  <script src="batman_example.js" type="text/javascript"></script>
+
+  <style>
+  * {
+    font-family: "Myriad Pro", Arial, sans-serif;
+  }
+
+  #batman {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 300px;
+    text-align: center;
+  }
+
+  #batman img {
+    margin-left: -43px;
+    margin-top: -22px;
+  }
+
+  #batman input {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #999;
+    text-align: center;
+    width: 250px;
+    margin-bottom: 50px;
+  }
+  </style>
+</head>
+
+<body>
+  <div data-yield="main"></div>
+  <div id="batman">
+    <span>BatmanExample</span>
+    <code>powered by</code><br />
+    <img src="/resources/batman.png" />
+    <input type="text" data-bind="BatmanExample.mission"/>
+  </div>
+  <script type="text/javascript">
+    BatmanExample.run();
+  </script>
+</body>
+</html>
